@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <div class="info hidden">
+      <h1>Game Over</h1>
+      <button onclick="startGame()">New Game</button>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Rock Paper Scissors</h1>
+      </header>
+      <section>
+        <div id="score"></div>
+        <div id="status"></div>
+        <div id="lives">
+          <svg
+            class="w-6 h-6 hidden"
+            id="life"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <main>
+        <div class="choices">
+          <div class="choice" id="userChoice"></div>
+          <div class="choice" id="cpuChoice"></div>
+        </div>
+
+        <div class="select-choice">
+          <div class="choice">
+            <svg
+              class="paper"
+              id="paper"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"
+              ></path>
+            </svg>
+          </div>
+          <div class="choice">
+            <svg
+              class="scissors"
+              id="scissors"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"
+              ></path>
+            </svg>
+          </div>
+          <div class="choice">
+            <svg
+              class="rock"
+              id="rock"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
